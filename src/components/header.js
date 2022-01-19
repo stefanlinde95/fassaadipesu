@@ -1,32 +1,35 @@
 import * as React from "react"
 import PropTypes from "prop-types"
 import { Link } from "gatsby"
+import logoBlue from "../images/logoBlue.svg"
 
 const Header = ({ siteTitle }) => (
-  <header
-    style={{
-      background: `rebeccapurple`,
-      marginBottom: `1.45rem`,
-    }}
-  >
-    <div
-      style={{
-        margin: `0 auto`,
-        maxWidth: 960,
-        padding: `1.45rem 1.0875rem`,
-      }}
-    >
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
+  <header>
+    <div className="container">
+      <div className="row">
+        <div
+          className="nav"
           style={{
-            color: `white`,
-            textDecoration: `none`,
+            margin: `0 auto`,
           }}
         >
-          {siteTitle}
-        </Link>
-      </h1>
+          <Link
+            to="/"
+            style={{
+              color: `white`,
+              textDecoration: `none`,
+            }}
+          >
+            <img src={logoBlue} alt={siteTitle} className="logo" />
+          </Link>
+          <div className="navbar ms-auto">
+            <Link to="/">Avaleht</Link>
+            <Link className="cta" to="/">
+              Küsi hinda
+            </Link>
+          </div>
+        </div>
+      </div>
     </div>
   </header>
 )
