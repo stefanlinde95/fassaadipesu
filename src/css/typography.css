@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @font-face {
   font-family: "Lufga";
   font-weight: 400;
@@ -21,3 +22,28 @@
   font-weight: 800;
   src: url("../fonts/LufgaBold.ttf");
 }
+=======
+@font-face {
+  font-family: "Lufga";
+  font-weight: 400;
+  src: url("../fonts/LufgaRegular.ttf");
+}
+
+@font-face {
+  font-family: "Lufga";
+  font-weight: 500;
+  src: url("../fonts/LufgaMedium.ttf");
+}
+
+@font-face {
+  font-family: "Lufga";
+  font-weight: 700;
+  src: url("../fonts/LufgaSemiBold.ttf");
+}
+
+@font-face {
+  font-family: "Lufga";
+  font-weight: 800;
+  src: url("../fonts/LufgaBold.ttf");
+}
+>>>>>>> dce71b6bbe46d1a25c25b48be02cdd7634af259f
