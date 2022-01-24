@@ -30,7 +30,7 @@ const Layout = ({ children }) => {
       <div>
         <main>{children}</main>
         <footer>
-          <div className="container">
+          <div className="container my-5">
             <div className="row">
               <div className="col-12">
                 © {new Date().getFullYear()}, Built by

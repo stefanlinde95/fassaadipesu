@@ -1,7 +1,9 @@
 import * as React from "react"
 import PropTypes from "prop-types"
 import { Link } from "gatsby"
+
 import logoBlue from "../images/logoBlue.svg"
+import Topnav from "./topnav"
 
 const Header = ({ siteTitle }) => (
   <header>
@@ -22,11 +24,17 @@ const Header = ({ siteTitle }) => (
           >
             <img src={logoBlue} alt={siteTitle} className="logo" />
           </Link>
-          <div className="navbar ms-auto">
+          <div className="desktop navbar ms-auto d-sm-none d-lg-flex">
             <Link to="/">Avaleht</Link>
-            <Link className="cta" to="/">
-              Küsi hinda
+            <Link to="/fassaadipesu">Fassaadipesu</Link>
+            <Link to="/rennipesu">Rennipesu</Link>
+            <Link to="/portfolio">Tehtud tööd</Link>
+            <Link className="cta" to="/kontakt">
+              Küsi pakkumist
             </Link>
+          </div>
+          <div className="d-sm-block d-lg-none ms-auto">
+            <Topnav />
           </div>
         </div>
       </div>

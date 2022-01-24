@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 @import "./typography.css";
 
 * {
@@ -16,19 +15,43 @@ body {
   padding: 8px;
   text-decoration: none;
   font: 16px;
+  transition: 0.5s;
   text-transform: uppercase;
+}
+
+.nav a:hover {
+  color: #1daeef !important;
+  transition: 0.5s;
 }
 
 header {
   margin: auto;
 }
 
-footer {
-  max-width: 90vw;
-}
-
 h1 {
   font-size: 50px !important;
+}
+
+@media only screen and (max-width: 500px) {
+  .desktop {
+    display: none !important;
+  }
+  .navbar-collapse a {
+    display: block;
+  }
+  .navbar-collapse .cta {
+    text-align: center;
+  }
+  .cta-btn-wrapper img {
+    padding-top: 50px;
+  }
+  #cta h2,
+  #cta p {
+    text-align: center;
+  }
+  #cta .col-sm-12 {
+    text-align: center;
+  }
 }
 
 #hero {
@@ -40,15 +63,18 @@ h1 {
   float: right;
 }
 
+#hero .col-6 {
+  position: relative;
+  background-color: #000;
+}
+
 #hero .container-fluid .row > * {
   padding: 0px !important;
 }
-.hero-text {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 500px;
-  text-decoration: none;
+
+.row .intro {
+  font-size: 20px;
+  margin-bottom: 25px;
 }
 
 .logo {
@@ -83,191 +109,20 @@ h1 {
   color: #1daeef !important;
   border: 2px solid #1daeef;
   padding: 5px 15px !important;
-  border-radius: 10px;
-}
-#rennid {
-  transition: 1s;
-  background-image: url("../images/rennipesu.jpg");
-  background-position: center center;
-  background-size: cover;
-}
-
-#rennid a {
-  background-color: rgba(0, 0, 0, 0.65);
-  padding: 0px;
-  transition: 1s;
-}
-
-#rennid h2 {
-  color: #fff;
-  text-decoration: none;
-  font-size: 3rem;
-  text-shadow: 5px 5px 15px rgba(0, 0, 0, 0.35);
-}
-#rennid:hover a {
-  background-color: rgba(0, 0, 0, 0.5);
-  transition: 0.5s;
-  color: #1daeef;
-  text-decoration: none;
-  padding: 0px;
-}
-
-#fassaadipesu {
-  transition: 1s;
-  background-image: url("../images/fassaadipesu.jpg");
-  background-position: center center;
-  background-size: cover;
-}
-
-#fassaadipesu a {
-  background-color: rgba(0, 0, 0, 0.65);
-  padding: 0px;
-  transition: 1s;
-}
-
-#fassaadipesu h2 {
-  color: #fff;
-  font-size: 3rem;
-  text-decoration: none;
-  text-shadow: 5px 5px 15px rgba(0, 0, 0, 0.35);
-}
-#fassaadipesu:hover a {
-  background-color: rgba(0, 0, 0, 0.5);
-  transition: 0.5s;
-  color: #1daeef;
-  text-decoration: none;
-  padding: 0px;
-}
-
-#about h2 {
-  font-size: 3rem;
-}
-
-#about .about-us-row {
-  background-image: url("../images/Group.svg");
-  background-position: right bottom;
-  background-repeat: no-repeat;
-  background-size: contain;
-}
-
-#cta {
-  background-color: #1daeef;
-}
-#cta .cta-btn-wrapper {
-  height: 100%;
-  margin: auto;
-}
-
-#cta .cta-btn-wrapper .btn-info {
-  border-color: #fff;
-  padding: 25px 25px;
   background-color: #fff;
-  color: #1daeef;
+  border-radius: 10px;
+  transition: 0.5s;
 }
 
-#cta .cta-btn-wrapper .btn-info a {
-  color: #1daeef;
-}
-
-#cta a {
-  text-decoration: none;
-}
-
-#cta h2 {
-  color: #fff;
-  text-decoration: underline;
-}
-
-#cta p {
-  color: #fff;
-}
-=======
-@import "./typography.css";
-
-* {
-  font-family: "Lufga", sans-serif;
-}
-
-body {
-  margin: 0;
-}
-
-.nav a {
-  color: #8f90a6 !important;
-  font-weight: 600;
-  margin: 0px 15px 0px 15px;
-  padding: 8px;
-  text-decoration: none;
-  font: 16px;
-  text-transform: uppercase;
-}
-
-header {
-  margin: auto;
-}
-
-footer {
-  max-width: 90vw;
-}
-
-h1 {
-  font-size: 50px !important;
-}
-
-#hero {
-  height: 100%;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-#hero .house-img {
-  float: right;
-}
-
-#hero .container-fluid .row > * {
-  padding: 0px !important;
-}
-.hero-text {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 500px;
-  text-decoration: none;
-}
-
-.logo {
-  padding: 15px 0px;
-}
-
-.btn a {
-  color: #fff;
-  text-decoration: none;
-  padding: 15px 5px;
-}
-
-.btn a:hover {
-  color: #fff;
-}
-
-.btn-primary {
-  background-color: #1daeef !important;
-  border-color: #1daeef !important;
-}
-
-.navbar {
-  display: flex;
-}
-
-.nav {
-  width: 100%;
-  text-align: right;
-}
-
-.nav .cta {
-  color: #1daeef !important;
+.nav .cta:hover {
+  color: #fff !important;
   border: 2px solid #1daeef;
   padding: 5px 15px !important;
+  background-color: #1daeef;
   border-radius: 10px;
+  transition: 1s;
 }
+
 #rennid {
   transition: 1s;
   background-image: url("../images/rennipesu.jpg");
@@ -295,11 +150,38 @@ h1 {
   padding: 0px;
 }
 
-#fassaadipesu {
-  transition: 1s;
-  background-image: url("../images/fassaadipesu.jpg");
+#service .banner-area {
+  background-image: url("../images/fassaadipesu tume.jpg");
   background-position: center center;
   background-size: cover;
+  align-items: center;
+}
+#service h1 {
+  color: #fff;
+  align-items: center;
+}
+
+#service_two .banner-area {
+  background-image: url("../images/rennipesu tume.jpg");
+  background-position: center center;
+  background-size: cover;
+  align-items: center;
+}
+#service_two h1 {
+  color: #fff;
+  align-items: center;
+}
+
+#contact_us .banner-area {
+  background-image: url("../images/fassaadipesu_hind_tume.jpg");
+  background-position: center center;
+  background-size: cover;
+  align-items: center;
+}
+
+#contact_us h1 {
+  color: #fff;
+  align-items: center;
 }
 
 #fassaadipesu a {
@@ -326,6 +208,12 @@ h1 {
   font-size: 3rem;
 }
 
+@media only screen and (max-width: 500px) {
+  #about h2 {
+    font-size: 2rem;
+  }
+}
+
 #about .about-us-row {
   background-image: url("../images/Group.svg");
   background-position: right bottom;
@@ -334,34 +222,102 @@ h1 {
 }
 
 #cta {
-  background-color: #1daeef;
+  background: linear-gradient(91.57deg, #1daeef 33.99%, #1979af 98.67%);
 }
 #cta .cta-btn-wrapper {
   height: 100%;
   margin: auto;
 }
 
-#cta .cta-btn-wrapper .btn-info {
+#cta .btn-info {
   border-color: #fff;
-  padding: 25px 25px;
   background-color: #fff;
-  color: #1daeef;
-}
-
-#cta .cta-btn-wrapper .btn-info a {
   color: #1daeef;
 }
 
 #cta a {
   text-decoration: none;
+  color: #1daeef;
+  font-weight: 600;
 }
 
 #cta h2 {
   color: #fff;
   text-decoration: underline;
+  text-shadow: 5px 5px 25px rgba(56, 56, 56, 0.411);
 }
 
 #cta p {
   color: #fff;
 }
->>>>>>> dce71b6bbe46d1a25c25b48be02cdd7634af259f
+
+#cta .cta-btn-wrapper img {
+  margin: auto;
+}
+.bg-overlay {
+  background-color: #000;
+}
+
+.hero-text {
+  position: relative;
+  display: flex;
+}
+
+.hero-text p {
+  position: absolute;
+  top: 45%;
+  width: 100%;
+  text-align: center;
+  font-size: 3rem;
+  color: #fff;
+  text-shadow: 5px 5px 25px #000;
+  margin-bottom: 0px;
+}
+
+@media only screen and (max-width: 500px) {
+  .hero-text p {
+    font-size: 2rem;
+  }
+}
+
+.hero-text .gatsby-image-wrapper {
+  opacity: 0.8;
+  transition: 0.5s;
+}
+.hero-text .gatsby-image-wrapper:hover {
+  opacity: 1;
+  transition: 1s;
+}
+
+form p {
+  margin-top: 15px;
+}
+
+label,
+input,
+textarea {
+  width: 100%;
+}
+
+.form-group {
+  margin-top: 25px;
+}
+
+.form-group label {
+  margin-bottom: 5px;
+}
+
+.success {
+  background-color: rgba(0, 167, 111, 0.685);
+  color: #fff;
+  padding: 15px 25px;
+  border-radius: 10px;
+}
+
+/* Banner are styles */
+.banner-area {
+  min-height: 250px;
+  max-height: 250px;
+  width: 100%;
+  background-color: grey;
+}

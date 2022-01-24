@@ -10,31 +10,31 @@ const Shortgallery = () => (
         <SRLWrapper>
           <div className="row">
             <h2 className="pb-5">Tehtud tööd</h2>
-            <div className="col-3">
+            <div className="col-lg-3 col-md-6 col-sm-12 my-2">
               <StaticImage
                 className="ratio ratio-1x1"
-                src="../images/1.jpg"
+                src="../portfolio/fassaadipesu.jpg"
                 alt="fassaadipesu portfolio"
               />
             </div>
-            <div className="col-3">
+            <div className="col-lg-3 col-md-6 col-sm-12 my-2">
               <StaticImage
                 className="ratio ratio-1x1"
-                src="../images/2.jpg"
+                src="../portfolio/fassaadipesu5.jpg"
                 alt="fassaadipesu portfolio"
               />
             </div>
-            <div className="col-3">
+            <div className="col-lg-3 col-md-6 col-sm-12 my-2">
               <StaticImage
                 className="ratio ratio-1x1"
-                src="../images/3.jpg"
+                src="../portfolio/fassaadipesu6.jpg"
                 alt="fassaadipesu portfolio"
               />
             </div>
-            <div className="col-3">
+            <div className="col-lg-3 col-md-6 col-sm-12 my-2">
               <StaticImage
                 className="ratio ratio-1x1"
-                src="../images/4.jpg"
+                src="../portfolio/fassaadipesu7.jpg"
                 alt="fassaadipesu portfolio"
               />
             </div>
@@ -42,7 +42,7 @@ const Shortgallery = () => (
         </SRLWrapper>
       </SimpleReactLightbox>
       <button className="btn btn-primary my-5">
-        <Link to="/">Vaata teisi töid</Link>
+        <Link to="/portfolio">Vaata teisi töid</Link>
       </button>
     </div>
   </section>
