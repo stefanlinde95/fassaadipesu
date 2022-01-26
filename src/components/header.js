@@ -27,7 +27,7 @@ const Header = ({ siteTitle }) => (
           <div className="desktop navbar ms-auto d-sm-none d-lg-flex">
             <Link to="/">Avaleht</Link>
             <Link to="/fassaadipesu">Fassaadipesu</Link>
-            <Link to="/rennipesu">Rennipesu</Link>
+            <Link to="/katusepesu">katusepesu</Link>
             <Link to="/portfolio">Tehtud tööd</Link>
             <Link className="cta" to="/kontakt">
               Küsi pakkumist

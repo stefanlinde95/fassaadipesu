@@ -6,17 +6,20 @@ const Hero = () => (
     <div className="container-fluid">
       <div className="row bg-overlay">
         <div className="col-md-6 col-sm-12">
-          <a href="/rennipesu" className="hero-text">
+          <a href="/katusepesu" className="hero-text">
             <StaticImage
               className="ratio ratio-1x1 bg-overlay"
-              src="../images/rennipesu.jpg"
-              alt="rennipesu"
+              src="../images/katusepesu.jpg"
+              alt="katusepesu"
               height={500}
               quality={100}
             />
-            <p>
-              <span>Rennide puhastus</span>
-            </p>
+            <div className="hero-text-wrapper">
+              <p>
+                <span>Katusepesu</span>
+              </p>
+              <p className="sub">Katuste, rennide ja vihmaveesüsteemide pesu</p>
+            </div>
           </a>
         </div>
         <div className="col-md-6 col-sm-12">
@@ -28,9 +31,12 @@ const Hero = () => (
               height={500}
               quality={100}
             />
-            <p>
-              <span>Fassaadipesu</span>
-            </p>
+            <div className="hero-text-wrapper">
+              <p>
+                <span>Fassaadipesu</span>
+              </p>
+              <p className="sub">Erinevate majafassaadide pesu</p>
+            </div>
           </a>
         </div>
       </div>

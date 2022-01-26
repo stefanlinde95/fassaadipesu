@@ -6,11 +6,11 @@ import Form from "../components/form"
 
 const SecondPage = () => (
   <Layout>
-    <Seo title="Rennipesu" />
+    <Seo title="Katusepesu" />
     <section id="service_two">
       <div className="banner-area d-flex">
         <div className="container">
-          <h1>Rennipesu</h1>
+          <h1>Katusepesu</h1>
         </div>
       </div>
       <div className="container">
@@ -47,6 +47,8 @@ const SecondPage = () => (
                 </li>
               </ul>
             </p>
+            <h2>Katusepesu hind</h2>
+            <p>Alates 4 €/m2</p>
           </div>
         </div>
         <div className="row">

@@ -8,6 +8,12 @@ body {
   margin: 0;
 }
 
+@media only screen and (max-width: 500px) {
+  .nav {
+    flex-wrap: nowrap !important;
+  }
+}
+
 .nav a {
   color: #8f90a6 !important;
   font-weight: 600;
@@ -125,7 +131,7 @@ h1 {
 
 #rennid {
   transition: 1s;
-  background-image: url("../images/rennipesu.jpg");
+  background-image: url("../images/katusepesu.jpg");
   background-position: center center;
   background-size: cover;
 }
@@ -162,7 +168,7 @@ h1 {
 }
 
 #service_two .banner-area {
-  background-image: url("../images/rennipesu tume.jpg");
+  background-image: url("../images/katusepesu tume.jpg");
   background-position: center center;
   background-size: cover;
   align-items: center;
@@ -261,17 +267,27 @@ h1 {
 .hero-text {
   position: relative;
   display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-text-wrapper {
+  position: absolute;
 }
 
 .hero-text p {
-  position: absolute;
-  top: 45%;
-  width: 100%;
   text-align: center;
   font-size: 3rem;
   color: #fff;
   text-shadow: 5px 5px 25px #000;
   margin-bottom: 0px;
+}
+
+.hero-text .sub {
+  text-align: center;
+  font-size: 1rem;
+  color: #fff;
+  text-shadow: 5px 5px 25px #000;
 }
 
 @media only screen and (max-width: 500px) {
