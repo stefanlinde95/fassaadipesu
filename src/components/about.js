@@ -2,6 +2,7 @@ import * as React from "react"
 import kiire from "../images/kiire.svg"
 import garantii from "../images/garantii.svg"
 import eluiga from "../images/eluiga.svg"
+import { Link } from "gatsby"
 
 const About = () => (
   <section id="about" className="pt-5 pb-3">
@@ -12,7 +13,16 @@ const About = () => (
           <p className="mt-4">
             Fassaadipesu.eu on fassaadipuhastusega tegelev Eesti ettevõte.
             Teostame puhastustöid kliendile sobival ajal, kiiresti ning andes
-            töödele ka garantii.
+            töödele ka garantii. Meie peamisteks teenusteks on:
+            <ul>
+              <li>
+                <Link to="/fassaadipesu">Fassaadipesu</Link>
+              </li>
+              <li>
+                <Link to="/katusepesu">Katuse- ja rennidepesu</Link>
+              </li>
+              <li>Tänavakivide puhastus</li>
+            </ul>
           </p>
           <p className="mt-4">
             Maja fassaadi puhastamine nõuab tihti asjakohast tehnikat ning
