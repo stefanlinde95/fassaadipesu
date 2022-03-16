@@ -124,20 +124,6 @@ function Form() {
                   className="p-2"
                 />
               </div>
-              <div className="form-group col-sm-12 col-lg-6">
-                <label htmlFor="file">Pildid</label>
-                <input
-                  id="file"
-                  type="file"
-                  name="file"
-                  className="form-control"
-                />
-                <ValidationError
-                  prefix="file"
-                  field="file"
-                  errors={state.errors}
-                />
-              </div>
             </div>
             <div className="form-group">
               <label htmlFor="message">Tellimuse sisu:</label>
