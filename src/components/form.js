@@ -11,10 +11,6 @@ function Form() {
           </div>
           <div className="col-sm-12 col-md-6 my-5 ps-5">
             <div>
-              <h3>E-mail</h3>
-              <p>info@fassaadipesu.eu</p>
-            </div>
-            <div>
               <h3>Tel.</h3>
               <p>(+372) 5663 4115</p>
             </div>
@@ -117,10 +113,10 @@ function Form() {
               <div className="form-group col-sm-12 col-lg-6">
                 <label htmlFor="date">Soovitud puhastuse aeg:</label>
                 <input
-                  type="date"
+                  type="datetime-local"
                   name="date"
                   id="date"
-                  placeholder="pp/kk/aaaa"
+                  min={new Date().toISOString().slice(0, -8)}
                   className="p-2"
                 />
               </div>
@@ -151,10 +147,6 @@ function Form() {
           <p className="mt-4">* - kohustuslik väli</p>
         </div>
         <div className="col-sm-12 col-md-6 my-5 ps-5">
-          <div>
-            <h3>E-mail</h3>
-            <p>info@fassaadipesu.eu</p>
-          </div>
           <div>
             <h3>Tel.</h3>
             <p>(+372) 5663 4115</p>
