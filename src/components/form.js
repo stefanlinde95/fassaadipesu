@@ -34,7 +34,7 @@ function Form() {
     <div className="container my-5">
       <div className="row">
         <div className="col-sm-12 col-md-6">
-          <form id="form" onSubmit={handleSubmit}>
+          <form id="form" method="POST" onSubmit={handleSubmit}>
             <div className="form-group">
               <label htmlFor="name">Teenuse tellija eraisik/ettevõte* :</label>
               <input
