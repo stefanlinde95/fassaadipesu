@@ -19,8 +19,11 @@ function Form() {
               <p>(+372) 5663 4115</p>
             </div>
             <div>
-              <h3>Fassaadipesu</h3>
-              <p>Reg. nr: (täiendamisel)</p>
+              <h3>Vemu OÜ</h3>
+              <ul>
+                <li>Reg. nr: 10188476 </li>
+                <li>KMKR: EE100618554 </li>
+              </ul>
             </div>
           </div>
         </div>
@@ -33,12 +36,13 @@ function Form() {
         <div className="col-sm-12 col-md-6">
           <form id="form" onSubmit={handleSubmit}>
             <div className="form-group">
-              <label htmlFor="name">Nimi</label>
+              <label htmlFor="name">Teenuse tellija eraisik/ettevõte* :</label>
               <input
                 id="name"
                 type="name"
                 name="name"
                 className="form-control"
+                required
               />
               <ValidationError
                 prefix="name"
@@ -46,40 +50,101 @@ function Form() {
                 errors={state.errors}
               />
             </div>
-            <div className="form-group">
-              <label htmlFor="email">Email</label>
-              <input
-                id="email"
-                type="email"
-                name="email"
-                className="form-control"
-              />
-              <ValidationError
-                prefix="Email"
-                field="email"
-                errors={state.errors}
-              />
+            <div className="row mt-4">
+              <div className="form-group col-sm-12 col-lg-6">
+                <label htmlFor="address">Objekti aadress* :</label>
+                <input
+                  id="address"
+                  type="text"
+                  name="address"
+                  className="form-control"
+                  required
+                />
+                <ValidationError
+                  prefix="address"
+                  field="address"
+                  errors={state.errors}
+                />
+              </div>
+              <div className="form-group col-sm-12 col-lg-6">
+                <label htmlFor="size">Objekti maht (m2):</label>
+                <input
+                  id="size"
+                  type="number"
+                  name="size"
+                  className="form-control"
+                />
+                <ValidationError
+                  prefix="size"
+                  field="size"
+                  errors={state.errors}
+                />
+              </div>
+            </div>
+            <div className="row mt-4">
+              <div className="form-group col-sm-12 col-lg-6">
+                <label htmlFor="email">Email* :</label>
+                <input
+                  id="email"
+                  type="email"
+                  name="email"
+                  className="form-control"
+                  required
+                />
+                <ValidationError
+                  prefix="Email"
+                  field="email"
+                  errors={state.errors}
+                />
+              </div>
+              <div className="form-group col-sm-12 col-lg-6">
+                <label htmlFor="phone">Tel.* :</label>
+                <input
+                  id="phone"
+                  type="phone"
+                  name="phone"
+                  className="form-control"
+                  required
+                />
+                <ValidationError
+                  prefix="phone"
+                  field="phone"
+                  errors={state.errors}
+                />
+              </div>
+            </div>
+            <div className="row mt-4">
+              <div className="form-group col-sm-12 col-lg-6">
+                <label htmlFor="date">Soovitud puhastuse aeg:</label>
+                <input
+                  type="date"
+                  name="date"
+                  id="date"
+                  placeholder="pp/kk/aaaa"
+                  className="p-2"
+                />
+              </div>
+              <div className="form-group col-sm-12 col-lg-6">
+                <label htmlFor="file">Pildid</label>
+                <input
+                  id="file"
+                  type="file"
+                  name="file"
+                  className="form-control"
+                />
+                <ValidationError
+                  prefix="file"
+                  field="file"
+                  errors={state.errors}
+                />
+              </div>
             </div>
             <div className="form-group">
-              Tel.
-              <input
-                id="phone"
-                type="phone"
-                name="phone"
-                className="form-control"
-              />
-              <ValidationError
-                prefix="phone"
-                field="phone"
-                errors={state.errors}
-              />
-            </div>
-            <div className="form-group">
-              Kirja sisu
+              <label htmlFor="message">Tellimuse sisu:</label>
               <textarea
                 id="message"
                 name="message"
-                rows="5"
+                rows="3"
                 className="form-control"
               />
               <ValidationError
@@ -88,6 +153,7 @@ function Form() {
                 errors={state.errors}
               />
             </div>
+
             <button
               type="submit"
               disabled={state.submitting}
@@ -96,6 +162,7 @@ function Form() {
               Saada
             </button>
           </form>
+          <p className="mt-4">* - kohustuslik väli</p>
         </div>
         <div className="col-sm-12 col-md-6 my-5 ps-5">
           <div>
@@ -107,8 +174,11 @@ function Form() {
             <p>(+372) 5663 4115</p>
           </div>
           <div>
-            <h3>Fassaadipesu</h3>
-            <p>Reg. nr: (täiendamisel)</p>
+            <h3>Vemu OÜ</h3>
+            <ul>
+              <li>Reg. nr: 10188476 </li>
+              <li>KMKR: EE100618554 </li>
+            </ul>
           </div>
         </div>
       </div>

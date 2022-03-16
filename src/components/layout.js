@@ -32,10 +32,11 @@ const Layout = ({ children }) => {
         <footer>
           <div className="container my-5">
             <div className="row">
-              <div className="col-12">
-                © {new Date().getFullYear()}, Built by
-                {` `}
-                <a href="https://www.devstep.ee">Devstep</a>
+              <div className="col-lg-6 col-sm-12 company">
+                Vemu OÜ (10188476) © {new Date().getFullYear()}
+              </div>
+              <div className="col-lg-6 col-sm-12 signature">
+                <a href="https://www.devstep.ee">Devstep digiagentuur</a>
               </div>
             </div>
           </div>

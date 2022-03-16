@@ -8,8 +8,11 @@ const Cta = () => (
       <div className="row py-5">
         <div className="col-sm-12 col-lg-7">
           <h2>Soovid ka oma fassadi puhtaks saada?</h2>
-          <p>Siis küsi meie käest julgelt hinnapakkumist!</p>
-          <button className="btn btn-info">
+          <p>
+            Suvine graafik täitub kiiresti. Võta varakult ühendust ja broneeri
+            töö soovitud ajale! <br /> Teostame tööd kiiresti!
+          </p>
+          <button className="btn btn-info mt-4">
             <a href="#form">Küsi hinnapakkumist</a>
           </button>
         </div>

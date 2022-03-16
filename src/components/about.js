@@ -11,18 +11,32 @@ const About = () => (
         <div className="col-md-8 col-sm-12">
           <h2 className="my-5">Fassaadipuhastus Eestis</h2>
           <p className="mt-4">
-            Fassaadipesu.eu on fassaadipuhastusega tegelev Eesti ettevõte.
-            Teostame puhastustöid kliendile sobival ajal, kiiresti ning andes
-            töödele ka garantii. Meie peamisteks teenusteks on:
+            Teostame fassaadipuhastuse töid üle terve Eesti. Omame teadmisi ja
+            kogemusi erinevat tüüpi fassaadide pesemisel. Meie juhtiv meeskonda
+            kuuluvad spetsialistid puhastuse valdkonnas, kui ka ehituse
+            valdkonnas, mistõttu saame pakkuda klientidele laiapõhjalist ja
+            professionaalset teenust ja nõustamist väga mitme nurga alt, et
+            saavutada oodatud tulemus.
+          </p>
+          <p>
+            <strong>Meie klientideks on</strong>
             <ul>
-              <li>
-                <Link to="/fassaadipesu">Fassaadipesu</Link>
-              </li>
-              <li>
-                <Link to="/katusepesu">Katuse- ja rennidepesu</Link>
-              </li>
-              <li>Tänavakivide puhastus</li>
+              <li>Korteriühistud</li>
+              <li>Koolimajad</li>
+              <li>Eramajad</li>
+              <li>Tööstushooned</li>
+              <li>Ehitusjärgsed hooned</li>
+              <li>Eramajad</li>
             </ul>
+          </p>
+          <h3>Kuidas meie puhastus toimib? </h3>
+          <p className="mt-4">
+            Lisaks meie laiapõhjalistele teadmistele ja kogemustele kasutame ka
+            väga tõhusat puhastusainet. Kasutame tõhusat ainet, mis tungib
+            sügavale pooridesse puhastades hallituse ja sambla juured mis ei
+            lase sellel enam nii kergesti tagasi tekkida. Tavalise pesu käigus,
+            aga puhastatakse kergelt pind, aga mikroobid jäävad pooridesse edasi
+            "elama" mistõttu on sammal väga kiire tagasi tekkima.
           </p>
           <p className="mt-4">
             Maja fassaadi puhastamine nõuab tihti asjakohast tehnikat ning

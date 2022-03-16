@@ -214,6 +214,10 @@ h1 {
   font-size: 3rem;
 }
 
+#about p {
+  font-size: 18px;
+}
+
 @media only screen and (max-width: 500px) {
   #about h2 {
     font-size: 2rem;
@@ -336,4 +340,15 @@ textarea {
   max-height: 250px;
   width: 100%;
   background-color: grey;
+}
+
+footer .signature {
+  text-align: right;
+}
+
+footer .signature a {
+  font-size: 14px;
+  text-align: right;
+  color: #000;
+  text-decoration: none;
 }
