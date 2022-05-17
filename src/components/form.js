@@ -12,13 +12,13 @@ function Form() {
           <div className="col-sm-12 col-md-6 my-5 ps-5">
             <div>
               <h3>Tel.</h3>
-              <p>(+372) 5663 4115</p>
+              <p>(+372) 5663 4115 - Raul Ventsel</p>
+              <p>(+372) 5814 1833 - Sille Mustonen </p>
             </div>
             <div>
               <h3>Vemu OÜ</h3>
               <ul>
-                <li>Reg. nr: 10188476 </li>
-                <li>KMKR: EE100618554 </li>
+                <li>Reg. nr: 16493134 </li>
               </ul>
             </div>
           </div>
@@ -149,13 +149,13 @@ function Form() {
         <div className="col-sm-12 col-md-6 my-5 ps-5">
           <div>
             <h3>Tel.</h3>
-            <p>(+372) 5663 4115</p>
+            <p>(+372) 5663 4115 - Raul Ventsel</p>
+            <p>(+372) 5814 1833 - Sille Mustonen</p>
           </div>
           <div>
             <h3>Vemu OÜ</h3>
             <ul>
-              <li>Reg. nr: 10188476 </li>
-              <li>KMKR: EE100618554 </li>
+              <li>Reg. nr: 16493134 </li>
             </ul>
           </div>
         </div>
